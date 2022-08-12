@@ -5,6 +5,7 @@ const sk = 15;
 
 // named export
 export function addNums(a, b) {
+  console.log(`${a} + ${b} = ${a + b} `);
   return a + b;
 }
 
