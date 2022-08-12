@@ -9,9 +9,11 @@ import { num11 as n1, num2 as n2, arr } from './modules/variables.js';
 import sayHiHere from './modules/sayHi.js';
 import calcAvg from './modules/avg.js';
 // import calcAvg from './modules/avg.js';
+import { displayAfterH1 } from './modules/htmlDisplay.js';
 
 const rez1 = addNums(n1, n2);
 console.log('rez1 ===', rez1);
+displayAfterH1(rez1);
 
 // sayHi('James');
 sayHiHere('James');
@@ -20,3 +22,4 @@ console.log('minusrez ===', minusrez);
 
 const avg1 = calcAvg(arr);
 console.log('avg1 ===', avg1.toFixed(2));
+displayAfterH1(avg1.toFixed(2));
